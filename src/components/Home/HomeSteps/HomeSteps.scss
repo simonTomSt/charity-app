@@ -1,0 +1,47 @@
+@import "../../../scss/index.scss";
+
+.steps {
+  padding: 50px 0px;
+  &__content {
+    height: 325px;
+    width: 100%;
+    background-color: $primary-color;
+  }
+  .container {
+    @extend %container-settings;
+    padding: 0 10px;
+  }
+  &__step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 25%;
+    max-width: 155px;
+    text-align: center;
+  }
+  &__name {
+    position: relative;
+    padding: 15px 0;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      height: 1px;
+      width: 70%;
+      transform: translate(-50%, 50%);
+      background-color: $text-color;
+    }
+  }
+  &__message {
+    margin-top: 15px;
+  }
+  &__link {
+    margin: 50px auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

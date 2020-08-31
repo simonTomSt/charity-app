@@ -54,6 +54,7 @@ h2 {
   font-size: 2.375rem;
   position: relative;
   margin-bottom: 100px;
+  text-align: center;
   &::after {
     content: "";
     position: absolute;
@@ -65,7 +66,7 @@ h2 {
     bottom: 0;
     height: 40px;
     width: 100%;
-    transform: translateY(140%);
+    transform: translateY(160%);
   }
 }
 h3 {
