@@ -1,0 +1,26 @@
+body {
+  font-family: $primary-font;
+}
+section {
+}
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: $primary-transition;
+}
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: $primary-transition;
+}
+li {
+  list-style: none;
+}
+
+.primary-btn {
+  background-color: transparent;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+}
