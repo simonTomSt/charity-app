@@ -1,0 +1,46 @@
+@import "../../../scss/index.scss";
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 20px 10px;
+  width: 100%;
+  max-width: 724px;
+  height: 120px;
+
+  &__menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__item {
+    padding: 10px 15px;
+    font-size: 1.125rem;
+    position: relative;
+    border: $primary-border;
+    border-color: transparent;
+    &.active,
+    &:hover {
+      border-color: $text-color;
+    }
+  }
+  &__button {
+    padding: 5px;
+    font-size: 0.8125rem;
+    margin: 0 10px;
+    font-weight: 600;
+    color: $lignt-text-color;
+    background-color: transparent;
+    &--highlighted {
+      border: $primary-border;
+      border-color: $secondary-color;
+    }
+    &:hover {
+      color: $text-color;
+    }
+  }
+}

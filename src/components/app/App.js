@@ -1,10 +1,11 @@
 import React from "react";
-import LandingPage from "../landingPage/LandingPage";
+import Home from "../Home/Home";
+import { Route } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <LandingPage />
+      <Route exact path="/" component={Home} />
     </>
   );
 }

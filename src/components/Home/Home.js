@@ -1,10 +1,10 @@
 import React from "react";
-import Opening from "./Opening/Opening";
+import HomeHeader from "./HomeHeader/HomeHeader";
 
 const LandingPage = () => {
   return (
     <>
-      <Opening />
+      <HomeHeader />
     </>
   );
 };
