@@ -25,7 +25,7 @@ const HomeNav = () => {
         <Scroll to="start" {...scrollSettings}>
           Start
         </Scroll>
-        <Scroll to="opening" {...scrollSettings}>
+        <Scroll to="steps" {...scrollSettings}>
           O co chodzi?
         </Scroll>
         <Scroll to="opening" {...scrollSettings}>
