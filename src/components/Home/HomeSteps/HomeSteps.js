@@ -4,7 +4,7 @@ import shirtIcon from "../../../assets/Icon-1.svg";
 import bagIcon from "../../../assets/Icon-2.svg";
 import searchIcon from "../../../assets/Icon-3.svg";
 import reloadIcon from "../../../assets/Icon-4.svg";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 const HomeSteps = () => {
   return (
@@ -44,7 +44,7 @@ const HomeSteps = () => {
           </acricle>
         </div>
       </div>
-      <Link to="/login">
+      <Link to="/logowanie">
         <button className="primary-btn steps__link">
           ODDAJ <br /> RZECZY
         </button>

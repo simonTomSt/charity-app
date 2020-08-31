@@ -13,12 +13,12 @@ const HomeHeader = () => {
             Zacznij pomagać! <br /> Oddaj niechciane rzeczy w zaufane ręce
           </h2>
           <div className="header__buttons">
-            <Link to="/login">
+            <Link to="/logowanie">
               <button className="primary-btn ">
                 ODDAJ <br /> RZECZY
               </button>
             </Link>
-            <Link to="/login">
+            <Link to="/logowanie">
               <button className="primary-btn ">
                 ZORGANIZUJ <br /> ZBIÓRKĘ
               </button>
