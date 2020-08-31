@@ -28,7 +28,7 @@ const HomeNav = () => {
         <Scroll to="proste-kroki" {...scrollSettings}>
           O co chodzi?
         </Scroll>
-        <Scroll to="opening" {...scrollSettings}>
+        <Scroll to="o-nas" {...scrollSettings}>
           O nas
         </Scroll>
         <Scroll to="opening" {...scrollSettings}>
