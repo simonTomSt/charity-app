@@ -6,6 +6,7 @@ import UserPanel from "../../generic/UserPanel/UserPanel";
 const HomeNav = () => {
   const scrollSettings = {
     className: "nav__item",
+    activeClass: "active",
     spy: true,
     smooth: true,
     hashSpy: true,
@@ -21,7 +22,7 @@ const HomeNav = () => {
         <UserPanel />
       </div>
       <ul className="nav__menu">
-        <Scroll to="header" {...scrollSettings}>
+        <Scroll to="start" {...scrollSettings}>
           Start
         </Scroll>
         <Scroll to="opening" {...scrollSettings}>

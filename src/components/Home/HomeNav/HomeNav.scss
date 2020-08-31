@@ -23,6 +23,7 @@
     position: relative;
     border: $primary-border;
     border-color: transparent;
+
     &.active,
     &:hover {
       border-color: $text-color;

@@ -1,3 +1,6 @@
+* {
+  font-family: $primary-font;
+}
 body {
   font-family: $primary-font;
   color: $text-color;
@@ -9,7 +12,26 @@ button {
   outline: 0;
   cursor: pointer;
   transition: $primary-transition;
+
+  &.primary-btn {
+    background-color: transparent;
+    border: $primary-border;
+    padding: 10px 15px;
+    font-weight: 300;
+    font-size: 2.25rem;
+    width: 300px;
+    color: $text-color;
+
+    &:hover {
+      background-color: $text-color;
+      color: white;
+      a {
+        color: white;
+      }
+    }
+  }
 }
+
 a {
   color: $text-color;
   text-decoration: none;
@@ -20,16 +42,14 @@ li {
   list-style: none;
 }
 
-.primary-btn {
-  background-color: transparent;
-  padding: 10px 20px;
-  font-size: 1.2rem;
-}
-
 .container {
   max-width: 1344px;
   width: 100%;
   height: 100%;
   position: relative;
   margin: 0 auto;
+}
+
+h2 {
+  font-size: 2.375rem;
 }
