@@ -13,7 +13,7 @@ const HomeNav = () => {
     duration: 1000,
     delay: 200,
     isDynamic: true,
-    offset: -70,
+    offset: 40,
   };
 
   return (
@@ -31,7 +31,7 @@ const HomeNav = () => {
         <Scroll to="o-nas" {...scrollSettings}>
           O nas
         </Scroll>
-        <Scroll to="opening" {...scrollSettings}>
+        <Scroll to="who-we-help" {...scrollSettings}>
           Fundacja i organizacje
         </Scroll>
         <Scroll to="opening" {...scrollSettings}>

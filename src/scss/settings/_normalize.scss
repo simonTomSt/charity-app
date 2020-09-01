@@ -5,14 +5,13 @@ body {
   font-family: $primary-font;
   color: $text-color;
 }
-section {
-}
+
 button {
   border: 0;
   outline: 0;
   cursor: pointer;
   transition: $primary-transition;
-
+  background-color: transparent;
   &.primary-btn {
     background-color: transparent;
     border: $primary-border;
