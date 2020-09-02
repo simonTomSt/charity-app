@@ -34,7 +34,7 @@ const HomeNav = () => {
         <Scroll to="who-we-help" {...scrollSettings}>
           Fundacja i organizacje
         </Scroll>
-        <Scroll to="opening" {...scrollSettings}>
+        <Scroll to="kontakt" {...scrollSettings}>
           Kontakt
         </Scroll>
       </ul>

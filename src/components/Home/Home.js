@@ -5,6 +5,7 @@ import HomeAchievements from "./HomeAchievements/HomeAchievements";
 import HomeSteps from "./HomeSteps/HomeSteps";
 import HomeAbout from "./HomeAbout/HomeAbout";
 import HomeActivity from "./HomeActivity/HomeActivity";
+import HomeContact from "./HomeContact/HomeContact";
 
 const LandingPage = () => {
   return (
@@ -14,6 +15,7 @@ const LandingPage = () => {
       <HomeSteps />
       <HomeAbout />
       <HomeActivity />
+      <HomeContact />
     </>
   );
 };
