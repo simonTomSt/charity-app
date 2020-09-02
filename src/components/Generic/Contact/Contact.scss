@@ -64,8 +64,9 @@
   }
   button {
     margin-left: auto;
-    font-size: 1.2rem;
-    width: 120px;
+    margin-top: 20px;
+    font-size: 1.5rem !important;
+    width: 120px !important;
   }
   &__error {
     color: red;
