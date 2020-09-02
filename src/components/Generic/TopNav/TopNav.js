@@ -1,45 +1,33 @@
 import React from "react";
-import "./TopNav.scss";
+import "../../Home/HomeHeader/HomeHeader.scss";
+import { HashLink as Link } from "react-router-hash-link";
 import UserPanel from "../UserPanel/UserPanel";
-import { Link as Scroll } from "react-scroll";
-const TopNav = () => {
-  const scrollSettings = {
-    className: "header__item",
-    spy: true,
-    smooth: true,
-    hashSpy: true,
-    duration: 1000,
-    delay: 200,
-    isDynamic: true,
-    offset: -70,
-  };
 
+const HomeNav = () => {
   return (
-    <section className="header">
-      <div className="header__actions">
+    <nav className="nav">
+      <div className="nav__actions">
         <UserPanel />
       </div>
-      <nav className="header__nav">
-        <ul className="header__menu">
-          <Scroll to="opening" {...scrollSettings}>
-            Start
-          </Scroll>
-          <Scroll to="opening" {...scrollSettings}>
-            O co chodzi?
-          </Scroll>
-          <Scroll to="opening" {...scrollSettings}>
-            O nas
-          </Scroll>
-          <Scroll to="opening" {...scrollSettings}>
-            Fundacja i organizacje
-          </Scroll>
-          <Scroll to="opening" {...scrollSettings}>
-            Kontakt
-          </Scroll>
-        </ul>
-      </nav>
-    </section>
+      <ul className="nav__menu">
+        <Link className="nav__item" to="/#start">
+          Start
+        </Link>
+        <Link className="nav__item" to="/#proste-kroki">
+          O co chodzi?
+        </Link>
+        <Link className="nav__item" to="/#o-nas">
+          O nas
+        </Link>
+        <Link className="nav__item" to="/#who-we-help">
+          Fundacja i organizacje
+        </Link>
+        <Link className="nav__item" to="/#kontakt">
+          Kontakt
+        </Link>
+      </ul>
+    </nav>
   );
 };
 
-export default TopNav;
+export default HomeNav;

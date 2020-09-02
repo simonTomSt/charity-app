@@ -3,4 +3,4 @@ const Register = () => {
   return <section className="login"></section>;
 };
 
-export default Login;
+export default Register;

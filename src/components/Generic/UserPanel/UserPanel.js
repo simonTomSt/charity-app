@@ -6,7 +6,7 @@ const UserPanel = () => {
       <Link to="/logowanie">
         <button className="nav__button">Zaloguj</button>
       </Link>
-      <Link to="rejestracja">
+      <Link to="/rejestracja">
         <button className="nav__button nav__button--highlighted">
           Załóż konto
         </button>
