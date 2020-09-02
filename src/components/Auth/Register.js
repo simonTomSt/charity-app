@@ -4,6 +4,7 @@ import "./Auth.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import { Link } from "react-router-dom";
+import firebase from "../app/config/Fire";
 
 const Register = () => {
   return (
@@ -20,7 +21,14 @@ const Register = () => {
               passwordConfirmation: "",
             }}
             onSubmit={(values, { resetForm }) => {
-              console.log(values);
+              const { email, password } = values;
+              firebase
+                .auth()
+                .createUserWithEmailAndPassword(email, password)
+                .catch(function (error) {
+                  console.log(error);
+                });
+
               resetForm({ email: "", password: "", passwordConfirmation: "" });
             }}
             validationSchema={Yup.object({

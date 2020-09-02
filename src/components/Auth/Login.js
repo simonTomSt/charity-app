@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import TopNav from "../Generic/TopNav/TopNav";
 import "./Auth.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import firebase from "../app/config/Fire";
+import { UserContext } from "../app/contexts/UserContext";
 
 const Login = () => {
+  const [user, setUser] = useContext(UserContext);
+  const history = useHistory();
   return (
     <>
       <section className="auth ">
@@ -16,7 +20,24 @@ const Login = () => {
           <Formik
             initialValues={{ email: "", password: "" }}
             onSubmit={(values, { resetForm }) => {
-              console.log(values);
+              const { email, password } = values;
+              firebase
+                .auth()
+                .signInWithEmailAndPassword(email, password)
+                .then((response) => {
+                  const respUser = {
+                    isLogged: true,
+                    email: response.user.email,
+                    id: response.user.uid,
+                  };
+                  sessionStorage.setItem("user", JSON.stringify(respUser));
+                  setUser(JSON.parse(sessionStorage.getItem("user")));
+                  history.push("/");
+                })
+
+                .catch(function (error) {
+                  console.log(error);
+                });
               resetForm({ email: "", password: "" });
             }}
             validationSchema={Yup.object({
@@ -62,6 +83,7 @@ const Login = () => {
                   <Link to="/rejestracja">
                     <button type="submit"> Załóż konto </button>
                   </Link>
+
                   <button type="submit" className="primary-btn">
                     Zaloguj się
                   </button>

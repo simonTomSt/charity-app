@@ -44,7 +44,7 @@ const HomeSteps = () => {
           </article>
         </div>
       </div>
-      <Link to="/logowanie">
+      <Link to="/oddaj-rzeczy">
         <button className="primary-btn steps__link">
           ODDAJ <br /> RZECZY
         </button>
