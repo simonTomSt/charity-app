@@ -2,7 +2,7 @@ import React from "react";
 import "./HomeNav.scss";
 
 import { Link as Scroll } from "react-scroll";
-import UserPanel from "../../generic/UserPanel/UserPanel";
+import UserPanel from "../../Generic/UserPanel/UserPanel";
 const HomeNav = () => {
   const scrollSettings = {
     className: "nav__item",

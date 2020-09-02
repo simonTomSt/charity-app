@@ -1,0 +1,23 @@
+@import "../../../scss/index.scss";
+.footer {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  left: 0;
+  height: 50px;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__icons {
+    position: absolute;
+    right: 10%;
+    display: flex;
+    img {
+      margin: 0 10px;
+    }
+  }
+}

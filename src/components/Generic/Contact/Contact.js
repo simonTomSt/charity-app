@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./HomeContact.scss";
+import "./Contact.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Axios from "axios";
+import Footer from "../Footer/Footer";
 
-const HomeContact = () => {
+const Contact = () => {
   const [responseMessage, setresponseMessage] = useState(null);
 
   const sentForm = (data) => {
@@ -109,8 +110,9 @@ const HomeContact = () => {
           )}
         </Formik>
       </div>
+      <Footer />
     </section>
   );
 };
 
-export default HomeContact;
+export default Contact;
