@@ -3,10 +3,11 @@ import TopNav from "../Generic/TopNav/TopNav";
 import "./Auth.scss";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import firebase from "../app/config/Fire";
 
 const Register = () => {
+  const history = useHistory();
   return (
     <>
       <section className="auth ">
@@ -28,8 +29,8 @@ const Register = () => {
                 .catch(function (error) {
                   console.log(error);
                 });
-
               resetForm({ email: "", password: "", passwordConfirmation: "" });
+              history.push("/logowanie");
             }}
             validationSchema={Yup.object({
               email: Yup.string()

@@ -11,7 +11,16 @@
   width: 100%;
   max-width: 724px;
   height: 120px;
-
+  &__actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__name {
+    margin-right: 10px;
+    font-weight: 600;
+    font-weight: 0.8rem;
+  }
   &__menu {
     width: 100%;
     display: flex;
