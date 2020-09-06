@@ -1,0 +1,62 @@
+@import "../../../../scss/index.scss";
+.main__form--donation {
+  label {
+    display: block;
+    position: relative;
+    padding-left: 65px;
+    margin: 20px 0;
+    cursor: pointer;
+    font-size: 1.5rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border: $primary-border;
+  }
+
+  /* On mouse-over, add a grey background color */
+  label:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  label input:checked ~ .checkmark {
+    background-color: $secondary-color;
+  }
+}
+/* Style the checkmark/indicator */
+label .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+  select {
+    width: 400px;
+  }
+}

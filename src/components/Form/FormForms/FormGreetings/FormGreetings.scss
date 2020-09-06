@@ -1,0 +1,16 @@
+.greetings {
+  &__content {
+    padding-top: 15%;
+    text-align: center;
+    width: 50%;
+    h2 {
+      font-weight: 300;
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+    button {
+      width: fit-content;
+      font-size: 1.2rem;
+    }
+  }
+}

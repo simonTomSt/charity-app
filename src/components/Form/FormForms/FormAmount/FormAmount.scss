@@ -1,0 +1,10 @@
+@import "../../../../scss/index.scss";
+.amount {
+  label {
+    display: flex;
+    align-items: center;
+  }
+  .custom-select {
+    @extend %custom-select;
+  }
+}

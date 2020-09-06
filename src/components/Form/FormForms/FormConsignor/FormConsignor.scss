@@ -1,0 +1,48 @@
+@import "../../../../scss/index.scss";
+
+.consignor {
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  .column {
+    margin-top: 30px;
+    width: 45%;
+    height: 100%;
+    margin: 10px;
+  }
+  label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    flex-wrap: wrap;
+    span {
+      width: 30%;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
+    }
+    input {
+      width: 40%;
+      padding: 5px 10px;
+    }
+    textarea {
+      border: $primary-border;
+      width: 42%;
+    }
+    p {
+      width: 60%;
+      margin-top: 5px;
+      width: 100%;
+      text-align: center;
+      padding-left: 3%;
+    }
+  }
+  .main__buttons {
+    position: absolute;
+    left: 0;
+    bottom: -80%;
+  }
+}

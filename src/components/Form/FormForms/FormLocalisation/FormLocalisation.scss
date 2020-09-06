@@ -1,0 +1,39 @@
+@import "../../../../scss/index.scss";
+.localisation {
+  .custom-select {
+    @extend %custom-select;
+    margin-left: 0;
+    margin-bottom: 50px;
+    ul {
+      width: 100%;
+      li {
+        text-align: left;
+        padding: 5px 10px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    max-width: 634px;
+    width: 100%;
+    li {
+      padding: 10px;
+      margin: 10px 20px 10px 0;
+      font-size: 1.2rem;
+      font-weight: 300;
+      border: $primary-border;
+      cursor: pointer;
+      &.selected {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

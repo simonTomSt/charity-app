@@ -1,0 +1,40 @@
+.summary {
+  padding: 50px 10px;
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 15px;
+  }
+  &__donation {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    font-size: 1.3rem;
+    img {
+      height: 50px;
+      margin-right: 10px;
+    }
+  }
+  &__details {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 680px;
+    display: flex;
+    justify-content: space-between;
+    .column {
+      width: 40%;
+      li {
+        margin: 25px 0;
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 85%;
+        p {
+          width: 45%;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
