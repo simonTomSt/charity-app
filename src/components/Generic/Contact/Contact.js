@@ -4,11 +4,13 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import Axios from "axios";
 import Footer from "../Footer/Footer";
+import Loading from "../Loading/Loading";
 
 const Contact = () => {
   const [responseMessage, setresponseMessage] = useState(null);
-
+  const [loading, setloading] = useState(false);
   const sentForm = (data) => {
+    setloading(true);
     Axios({
       method: "post",
       url: "https://fer-api.coderslab.pl/v1/portfolio/contact",
@@ -16,10 +18,12 @@ const Contact = () => {
       headers: { "Content-Type": "application/json" },
     })
       .then(function (response) {
+        setloading(false);
         console.log(response);
         setresponseMessage("success");
       })
       .catch((error) => {
+        setloading(false);
         console.log(error);
         setresponseMessage("errors");
       });
@@ -29,6 +33,7 @@ const Contact = () => {
     <section className="contact" id="kontakt">
       <div className="contact__content">
         <h2 className="contact__header">Skontaktuj się z nami</h2>
+        {loading && <Loading />}
         {responseMessage && (
           <div className="contact__response">
             {responseMessage === "success" ? (
