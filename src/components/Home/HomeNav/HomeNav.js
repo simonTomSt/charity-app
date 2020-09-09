@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./HomeNav.scss";
-
+import HamburgerMenu from "react-hamburger-menu";
 import { Link as Scroll } from "react-scroll";
 import UserPanel from "../../Generic/UserPanel/UserPanel";
 const HomeNav = () => {
+  const [open, setopen] = useState(false);
+
   const scrollSettings = {
     className: "nav__item",
     activeClass: "active",
@@ -16,12 +18,30 @@ const HomeNav = () => {
     offset: 40,
   };
 
+  const handleHamburger = () => {
+    setopen((prevState) => !prevState);
+  };
+
   return (
     <nav className="nav">
       <div className="nav__actions">
         <UserPanel />
       </div>
-      <ul className="nav__menu">
+
+      <HamburgerMenu
+        className="nav__hamburger"
+        isOpen={open}
+        menuClicked={handleHamburger}
+        width={35}
+        height={25}
+        strokeWidth={2}
+        rotate={0}
+        color="black"
+        borderRadius={0}
+        animationDuration={0.5}
+      />
+
+      <ul className={open ? "nav__menu opened" : "nav__menu"}>
         <Scroll to="start" {...scrollSettings}>
           Start
         </Scroll>

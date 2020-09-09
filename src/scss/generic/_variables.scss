@@ -1,2 +1,17 @@
 $primary-transition: 0.4s;
 $primary-border: 1px solid $text-color;
+
+$breakpoints: (
+  tablet: (
+    max-width: 1024px,
+  ),
+  tablet-small: (
+    max-width: 720px,
+  ),
+  mobile: (
+    max-width: 640px,
+  ),
+  mobile-small: (
+    max-width: 460px,
+  ),
+);

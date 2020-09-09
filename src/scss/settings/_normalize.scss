@@ -20,7 +20,12 @@ button {
     font-size: 2.25rem;
     width: 300px;
     color: $text-color;
-
+    @include mq(tablet) {
+      font-size: 1.6rem;
+    }
+    @include mq(mobile) {
+      width: fit-content;
+    }
     &:hover {
       background-color: $text-color;
       color: white;
@@ -54,6 +59,19 @@ h2 {
   position: relative;
   margin-bottom: 100px;
   text-align: center;
+  @include mq(tablet-small) {
+    font-size: 2rem;
+    line-height: 2.4rem;
+  }
+  @include mq(mobile) {
+    width: 100%;
+    padding: 0 5px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    &::after {
+      height: 25px !important;
+    }
+  }
   &::after {
     content: "";
     position: absolute;

@@ -7,6 +7,28 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: -20% -20%;
+  overflow: hidden;
+  @include mq(mobile) {
+    height: 120vh;
+  }
+  @include mq(mobile-small) {
+    height: 150vh;
+  }
+  @include mq(tablet) {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    &::after {
+      content: "";
+      background-color: rgba(255, 255, 255, 0.788);
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      height: 100%;
+    }
+  }
   &__content {
     position: absolute;
     right: 3%;
@@ -18,20 +40,37 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    z-index: 2;
+    @include mq(tablet) {
+      left: 50%;
+      top: 50%;
+      width: 100%;
+      transform: translate(-50%, -50%);
+      padding: 20px;
+      justify-content: center;
+    }
   }
   &__header {
     line-height: 3.5rem;
+    @include mq(mobile) {
+      font-size: 1.6rem !important;
+    }
   }
   &__slogan {
     font-size: 2.5rem;
     font-weight: 300;
+    @include mq(mobile) {
+      font-size: 1.4rem !important;
+    }
   }
   &__steps {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 70px;
-    width: 160%;
+    @include mq(mobile) {
+      flex-wrap: wrap;
+    }
   }
   &__step {
     margin: 0 10px;
@@ -45,6 +84,22 @@
     * {
       transform: rotate(-45deg);
     }
+    @include mq(tablet) {
+      transform: rotate(0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 10px;
+      * {
+        transform: rotate(0deg) !important;
+      }
+    }
+    @include mq(mobile) {
+      margin: 10px;
+      width: 45%;
+    }
   }
   &__number {
     text-align: center;
@@ -55,6 +110,10 @@
     left: 32%;
     top: 20%;
     transform: translateX(-50%) rotate(-45deg);
+    @include mq(tablet) {
+      position: static;
+      transform: rotate(0deg);
+    }
   }
   &__intruction {
     width: 70%;
@@ -63,5 +122,10 @@
     left: 60%;
     bottom: 20%;
     transform: translateX(-50%) rotate(-45deg);
+    @include mq(tablet) {
+      position: static;
+      transform: rotate(0deg);
+      width: 100%;
+    }
   }
 }

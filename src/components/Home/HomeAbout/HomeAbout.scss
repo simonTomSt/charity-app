@@ -6,6 +6,13 @@
   justify-content: center;
   height: 100vh;
   width: 100%;
+  @include mq(tablet) {
+    height: auto;
+    min-height: 100vh;
+  }
+  @include mq(mobile) {
+    flex-direction: column-reverse;
+  }
   &__content {
     width: 50%;
     text-align: center;
@@ -13,9 +20,17 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
+    @include mq(mobile) {
+      width: 100%;
+      padding-bottom: 170px;
+    }
   }
   &__header {
     width: 100%;
+    @include mq(tablet) {
+      width: 80%;
+    }
   }
   &__text {
     letter-spacing: -0.6px;
@@ -24,12 +39,21 @@
     line-height: 3rem;
     text-transform: justify;
     position: relative;
+    @include mq(tablet) {
+      font-size: 1.2rem;
+      line-height: 2.4rem;
+    }
   }
   &__signature {
     position: absolute;
     right: 0;
     bottom: 0;
     transform: translate(0%, 110%);
+    width: 36%;
+    min-width: 150px;
+    @include mq(tablet) {
+      width: 50%;
+    }
   }
   &__img {
     width: 50%;
@@ -37,5 +61,13 @@
     background-image: url("../../../assets/People.jpg");
     background-size: cover;
     background-position: center;
+    @include mq(tablet) {
+      height: auto;
+    }
+    @include mq(mobile) {
+      width: 100%;
+      height: 500px;
+      margin: 0 0 25px 0;
+    }
   }
 }

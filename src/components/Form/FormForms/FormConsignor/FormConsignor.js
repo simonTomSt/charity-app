@@ -23,7 +23,7 @@ const FormConsignor = ({ setStep, setconsignor, consignor }) => {
       return (today = yyyy + "-" + mm + 2 + "-" + dd);
     }
   };
-  console.log(setCurrDate());
+
   return (
     <>
       {" "}

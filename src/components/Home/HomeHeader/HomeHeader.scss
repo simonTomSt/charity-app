@@ -20,13 +20,31 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
+    @include mq(tablet) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
   &__slogan {
     width: 100%;
+    @include mq(mobile-small) {
+      font-size: 1.4rem;
+    }
   }
   &__buttons {
+    @include mq(mobile-small) {
+      flex-direction: column;
+    }
     button {
       margin: 0 10px;
+      @include mq(tablet-small) {
+        width: fit-content !important;
+      }
+      @include mq(mobile-small) {
+        margin: 10px 0;
+        width: 90% !important;
+      }
     }
     width: 100%;
     display: flex;

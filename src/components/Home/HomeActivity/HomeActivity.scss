@@ -12,6 +12,11 @@
     width: 100%;
     max-width: 750px;
     margin: 30px 0px 75px;
+    @include mq(mobile-small) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
   &__btn {
     border: $primary-border;
@@ -19,6 +24,15 @@
     padding: 15px;
     font-size: 1.5rem;
     width: 30%;
+    @include mq(mobile-small) {
+      width: 70%;
+      margin: 10px 0;
+    }
+    @include mq(mobile) {
+      font-size: 1.2rem;
+      text-align: center;
+      padding: 10px;
+    }
     &.active,
     &:hover {
       border-color: $text-color;
@@ -30,11 +44,17 @@
     width: 100%;
     font-size: 1.375rem;
     margin-bottom: 70px;
+    @include mq(mobile) {
+      line-height: 2.4rem;
+    }
   }
   &__list {
     width: 100%;
     display: flex;
     flex-direction: column;
+    @include mq(mobile) {
+      display: none;
+    }
   }
   &__item {
     font-family: $secondary-font;
@@ -66,6 +86,10 @@
   }
   &__info {
     font-size: 1.125rem;
+    text-align: right;
+    @include mq(tablet) {
+      padding-left: 10px;
+    }
   }
   &__numbers {
     display: flex;
@@ -78,6 +102,9 @@
       font-size: 1.2rem;
       width: 20px;
       margin: 0 5px;
+      @include mq(mobile) {
+        display: none;
+      }
     }
   }
 }

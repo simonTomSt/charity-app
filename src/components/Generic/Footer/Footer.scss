@@ -16,6 +16,9 @@
     position: absolute;
     right: 10%;
     display: flex;
+    @include mq(mobile-small) {
+      display: none;
+    }
     img {
       margin: 0 10px;
     }

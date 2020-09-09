@@ -7,6 +7,7 @@
     height: 179px;
     background-color: $secondary-color;
     width: 100%;
+    padding: 0 10px;
     .container {
       display: flex;
       flex-direction: column;
@@ -15,12 +16,22 @@
 
     &-message {
       font-size: 1.375rem;
+      @include mq(tablet) {
+        font-size: 1.1rem;
+        line-height: 2rem;
+      }
     }
   }
   &__screen {
     background-image: url("../../../assets/Background-Form.jpg");
     width: 100%;
     height: calc(100% - 179px);
+    @include mq(tablet) {
+      // height: 120vh;
+      padding: 0 20px;
+      background-size: cover;
+      background-position: center -160%;
+    }
     .main__header {
       margin: 30px 0;
     }
@@ -41,6 +52,10 @@
     flex-direction: column;
     width: 60%;
     align-items: flex-start;
+    @include mq(tablet) {
+      width: 100%;
+    }
+
     label {
       font-size: 1.5rem;
       font-weight: 300;
@@ -49,6 +64,10 @@
   &__buttons {
     position: relative;
     bottom: 12%;
+    @include mq(tablet) {
+      padding-top: 30px;
+      bottom: 20%;
+    }
     button {
       width: fit-content !important;
       font-size: 1.2rem !important;

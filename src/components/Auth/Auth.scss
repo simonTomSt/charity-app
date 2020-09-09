@@ -12,6 +12,9 @@
     transform: translate(-50%, -50%);
     width: 100%;
     max-width: 499px;
+    @include mq(mobile) {
+      margin-top: 100px;
+    }
   }
   &__form {
     background-color: $primary-color;
@@ -19,6 +22,7 @@
     widows: 100%;
     max-width: 384px;
     margin: 0 auto;
+
     label {
       display: flex;
       flex-direction: column;
@@ -49,6 +53,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mq(mobile) {
+      justify-content: space-around;
+    }
     button {
       font-size: 1.1rem !important;
       width: fit-content !important;
