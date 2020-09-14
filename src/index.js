@@ -9,7 +9,7 @@ import { UserProvider } from "./components/app/contexts/UserContext";
 ReactDOM.render(
   <React.StrictMode>
     <UserProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
       </BrowserRouter>
     </UserProvider>
