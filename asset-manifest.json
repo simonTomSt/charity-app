@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/charity-app/static/css/main.1504cc0b.chunk.css",
+    "main.js": "/charity-app/static/js/main.60e1e061.chunk.js",
+    "main.js.map": "/charity-app/static/js/main.60e1e061.chunk.js.map",
+    "runtime-main.js": "/charity-app/static/js/runtime-main.16927bb1.js",
+    "runtime-main.js.map": "/charity-app/static/js/runtime-main.16927bb1.js.map",
+    "static/js/2.38aa536f.chunk.js": "/charity-app/static/js/2.38aa536f.chunk.js",
+    "static/js/2.38aa536f.chunk.js.map": "/charity-app/static/js/2.38aa536f.chunk.js.map",
+    "index.html": "/charity-app/index.html",
+    "precache-manifest.cad50390319a8000b9e1f1a8291bcef5.js": "/charity-app/precache-manifest.cad50390319a8000b9e1f1a8291bcef5.js",
+    "service-worker.js": "/charity-app/service-worker.js",
+    "static/css/main.1504cc0b.chunk.css.map": "/charity-app/static/css/main.1504cc0b.chunk.css.map",
+    "static/js/2.38aa536f.chunk.js.LICENSE.txt": "/charity-app/static/js/2.38aa536f.chunk.js.LICENSE.txt",
+    "static/media/Contact.scss": "/charity-app/static/media/Background-Contact-Form.f4db7ddd.jpg",
+    "static/media/FormMain.scss": "/charity-app/static/media/Background-Form.aab5aa4c.jpg",
+    "static/media/FormConsignor.scss": "/charity-app/static/media/Decoration.2290784e.svg",
+    "static/media/Facebook.svg": "/charity-app/static/media/Facebook.df65b6c0.svg",
+    "static/media/FormStart.scss": "/charity-app/static/media/Form-Hero-Image.3bee335a.jpg",
+    "static/media/HomeHeader.scss": "/charity-app/static/media/Home-Hero-Image.e99903ed.jpg",
+    "static/media/Icon-1.svg": "/charity-app/static/media/Icon-1.91147906.svg",
+    "static/media/Icon-2.svg": "/charity-app/static/media/Icon-2.db91e33e.svg",
+    "static/media/Icon-3.svg": "/charity-app/static/media/Icon-3.2cfe9dfe.svg",
+    "static/media/Icon-4.svg": "/charity-app/static/media/Icon-4.436df0aa.svg",
+    "static/media/Icon-Arrow-Down.svg": "/charity-app/static/media/Icon-Arrow-Down.c470ec0c.svg",
+    "static/media/Icon-Arrow-Up.svg": "/charity-app/static/media/Icon-Arrow-Up.9b7f6ef4.svg",
+    "static/media/Instagram.svg": "/charity-app/static/media/Instagram.703479fd.svg",
+    "static/media/HomeAbout.scss": "/charity-app/static/media/People.6fa36651.jpg",
+    "static/media/Signature.svg": "/charity-app/static/media/Signature.e54cfcfc.svg",
+    "static/media/HomeAchievements.scss": "/charity-app/static/media/columns.99f2e620.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.16927bb1.js",
+    "static/js/2.38aa536f.chunk.js",
+    "static/css/main.1504cc0b.chunk.css",
+    "static/js/main.60e1e061.chunk.js"
+  ]
+}
